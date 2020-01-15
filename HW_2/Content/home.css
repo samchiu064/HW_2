@@ -2,7 +2,7 @@
     border-radius: 0;
 }
 
-#wrapper {
+#wrapper-home {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-    #wrapper.toggled {
+    #wrapper-home.toggled {
         padding-left: 250px;
         overflow: hidden;
     }
@@ -31,7 +31,7 @@
     transition: all 0.5s ease;
 }
 
-#wrapper.toggled #sidebar-wrapper {
+#wrapper-home.toggled #sidebar-wrapper {
     width: 250px;
 }
 
@@ -58,7 +58,7 @@
 
 .sidebar-nav {
     position: absolute;
-    top: 0;
+    top: -2px;
     width: 250px;
     margin: 0;
     padding: 0;
@@ -108,8 +108,12 @@
     margin: 0;
 }
 
+.nav-indent {
+    padding-left: 64px;
+}
+
 @media (min-width: 768px) {
-    #wrapper {
+    #wrapper-home {
         padding-left: 250px;
     }
 
@@ -117,7 +121,7 @@
         width: 250px;
     }
 
-    #wrapper.toggled {
+    #wrapper-home.toggled {
         padding-left: 0;
     }
 
@@ -125,15 +129,15 @@
         width: 250px;
     }
 
-    #wrapper.toggled #sidebar-wrapper {
+    #wrapper-home.toggled #sidebar-wrapper {
         width: 250px;
     }
 
-    #wrapper.toggled-2 #sidebar-wrapper {
+    #wrapper-home.toggled-2 #sidebar-wrapper {
         width: 50px;
     }
 
-        #wrapper.toggled-2 #sidebar-wrapper:hover {
+        #wrapper-home.toggled-2 #sidebar-wrapper:hover {
             width: 250px;
         }
 
@@ -146,13 +150,13 @@
         transition: all 0.5s ease;
     }
 
-    #wrapper.toggled #page-content-wrapper {
+    #wrapper-home.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
         padding-left: 250px;
     }
 
-    #wrapper.toggled-2 #page-content-wrapper {
+    #wrapper-home.toggled-2 #page-content-wrapper {
         position: relative;
         margin-right: 0;
         margin-left: -200px;
