@@ -29,7 +29,8 @@ namespace HW_2
                       "~/Content/bootstrap.css",
                       "~/Content/common.css",
                       "~/Content/login.css",
-                      "~/Content/home.css"));
+                      "~/Content/home.css",
+                      "~/Content/role.css"));
         }
     }
 }

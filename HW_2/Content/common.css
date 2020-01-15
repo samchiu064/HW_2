@@ -3,3 +3,6 @@
 
 body {
   background-color: #fafafa; }
+
+.content-left {
+  margin-left: inherit; }

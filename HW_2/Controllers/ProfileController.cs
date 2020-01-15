@@ -6,10 +6,14 @@ using System.Web.Mvc;
 
 namespace HW_2.Controllers
 {
-    public class RoleMaintenanceController : Controller
+    public class ProfileController : Controller
     {
-        // GET: RoleMaintenance
+        // GET: Profile
         public ActionResult Index()
+        {
+            return View();
+        }
+        public ActionResult Changeprofile()
         {
             return View();
         }

@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Role Maintenance";
+    ViewBag.Title = "System Setup";
 }
 
 <div id="wrapper-home">
@@ -12,11 +12,11 @@
                     <a href="@Url.Action("Index", "Home")"><span class="fa-stack fa-lg pull-left"><i class="fa fa-home fa-stack-1x "></i></span>Home</a>
                 </li>
                 <li>
-                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users-cog fa-stack-1x "></i></span>System Setup</a>
+                    <a href="#" class="active"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users-cog fa-stack-1x "></i></span>System Setup</a>
                     <ul class="nav-pills nav-stacked nav-indent" style="list-style-type:none;">
-                        <li>@Html.ActionLink("User Maintenacne", "Index", "UserMaintenance")</li>
-                        <li class="active">@Html.ActionLink("Role Maintenacne", "Index", "RoleMaintenance")</li>
-                        <li>@Html.ActionLink("Menu Maintenacne", "Index", "MenuMaintenance")</li>
+                        <li>@Html.ActionLink("User Maintenacne", "User", "SystemSetup")</li>
+                        <li>@Html.ActionLink("Role Maintenacne", "Role", "SystemSetup")</li>
+                        <li>@Html.ActionLink("Menu Maintenacne", "Menu", "SystemSetup")</li>
                     </ul>
                 </li>
                 <li>
