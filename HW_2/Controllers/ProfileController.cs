@@ -13,7 +13,7 @@ namespace HW_2.Controllers
         {
             return View();
         }
-        public ActionResult Changeprofile()
+        public ActionResult ChangePassword()
         {
             return View();
         }

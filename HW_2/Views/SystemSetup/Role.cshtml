@@ -3,36 +3,36 @@
     ViewBag.Title = "Role Maintenance";
 }
 
-<div id="wrapper-home">
-    @section sidebar {
-        <!-- Sidebar -->
-        <section id="sidebar-wrapper">
-            <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-                <li>
-                    <a href="@Url.Action("Index", "Home")"><span class="fa-stack fa-lg pull-left"><i class="fa fa-home fa-stack-1x "></i></span>Home</a>
-                </li>
-                <li>
-                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users-cog fa-stack-1x "></i></span>System Setup</a>
-                    <ul class="nav-pills nav-stacked nav-indent" style="list-style-type:none;">
-                        <li>@Html.ActionLink("User Maintenacne", "User", "SystemSetup")</li>
-                        <li class="active">@Html.ActionLink("Role Maintenacne", "Role", "SystemSetup")</li>
-                        <li>@Html.ActionLink("Menu Maintenacne", "Menu", "SystemSetup")</li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>System Operation</a>
-                    <ul class="nav-pills nav-stacked nav-indent" style="list-style-type:none;">
-                        <li>@Html.ActionLink("Profile", "Index", "Profile")</li>
-                        <li>@Html.ActionLink("Change Password", "Index", "ChangePassword")</li>
-                        <li>@Html.ActionLink("Log out", "Index", "Logout")</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <!-- /#sidebar-wrapper -->
-    }
+    <div id="wrapper-home">
+        @section sidebar {
+            <!-- Sidebar -->
+            <section id="sidebar-wrapper">
+                <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
+                    <li>
+                        <a href="@Url.Action("Index", "Home")"><span class="fa-stack fa-lg pull-left"><i class="fa fa-home fa-stack-1x "></i></span>Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users-cog fa-stack-1x "></i></span>System Setup</a>
+                        <ul class="nav-pills nav-stacked nav-indent" style="list-style-type:none;">
+                            <li>@Html.ActionLink("User Maintenacne", "User", "SystemSetup")</li>
+                            <li class="active">@Html.ActionLink("Role Maintenacne", "Role", "SystemSetup")</li>
+                            <li>@Html.ActionLink("Menu Maintenacne", "Menu", "SystemSetup")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>System Operation</a>
+                        <ul class="nav-pills nav-stacked nav-indent" style="list-style-type:none;">
+                            <li>@Html.ActionLink("Profile", "Index", "Profile")</li>
+                            <li>@Html.ActionLink("Change Password", "Index", "ChangePassword")</li>
+                            <li>@Html.ActionLink("Log out", "Index", "Logout")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /#sidebar-wrapper -->
+        }
 
-    <!-- Page Content -->
+        <!-- Page Content -->
     <section id="page-content-wrapper">
         <div class="container-fluid xyz">
             <div class="row">
@@ -48,10 +48,20 @@
                             <option>Other</option>
                         </select>
                     </div>
+                    <div class="button-group">
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                    </div>
+
                 </div>
             </div>
         </div>
+
     </section>
-    <!-- /#page-content-wrapper -->
-</div>
+
+        <!-- /#page-content-wrapper -->
+    </div>
 <!-- /#wrapper -->

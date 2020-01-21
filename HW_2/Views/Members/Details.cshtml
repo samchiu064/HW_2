@@ -1,0 +1,26 @@
+﻿@model HW_2.Models.Member
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Member</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MemPwd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MemPwd)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MemID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

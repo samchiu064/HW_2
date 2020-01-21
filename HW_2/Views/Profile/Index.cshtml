@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Profile";
 }
 
@@ -12,7 +11,7 @@
                     <a href="@Url.Action("Index", "Home")"><span class="fa-stack fa-lg pull-left"><i class="fa fa-home fa-stack-1x "></i></span>Home</a>
                 </li>
                 <li>
-                    <a href="#" class="active"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users-cog fa-stack-1x "></i></span>System Setup</a>
+                    <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-users-cog fa-stack-1x "></i></span>System Setup</a>
                     <ul class="nav-pills nav-stacked nav-indent" style="list-style-type:none;">
                         <li>@Html.ActionLink("User Maintenacne", "User", "SystemSetup")</li>
                         <li>@Html.ActionLink("Role Maintenacne", "Role", "SystemSetup")</li>
@@ -22,7 +21,7 @@
                 <li>
                     <a href="#"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>System Operation</a>
                     <ul class="nav-pills nav-stacked nav-indent" style="list-style-type:none;">
-                        <li>@Html.ActionLink("Profile", "Index", "Profile")</li>
+                        <li class="active">@Html.ActionLink("Profile", "Index", "Profile")</li>
                         <li>@Html.ActionLink("Change Password", "Index", "ChangePassword")</li>
                         <li>@Html.ActionLink("Log out", "Index", "Logout")</li>
                     </ul>
